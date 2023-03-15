@@ -24,3 +24,5 @@ setupGetCognitoUserSource(appSync.id);
 
 export const appSyncID = appSync.id;
 export const graphQLEndpoint = appSync.uris;
+
+export const readme = fs.readFileSync("./Pulumi.README.md").toString();
