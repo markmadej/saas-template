@@ -9,6 +9,11 @@ This doc contains my notes as I get everything set up.
 * brew install pulumi/tap/pulumi
 * npm install -g @aws-amplify/cli
 * pulumi config set aws:profile personal
+* Had to export env variables to get pulumi to connect properly - [docs](https://www.pulumi.com/docs/get-started/aws/begin/#configure-pulumi-to-access-your-aws-account)
+* Ran npm install in frontend directory and got some errors
+* Had to downgrade GraphQL version due to some conflict with apollo-link - not sure if that will cause problems
+* pulumi destroy spits out the config data before letting you confirm 
+* amplify console in AWS has a link to the site
 
 Questions
 * How do I tell what user is logged into aws-cli?  aws sts get-caller-identity --profile personal
